@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17677FCD1CADA82800DAD677 /* BLViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 17677FCB1CADA82800DAD677 /* BLViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17677FCE1CADA82800DAD677 /* BLViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 17677FCC1CADA82800DAD677 /* BLViews.m */; };
+		17677FD11CADA9C700DAD677 /* BLDictionaries.h in Headers */ = {isa = PBXBuildFile; fileRef = 17677FCF1CADA9C700DAD677 /* BLDictionaries.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17677FD21CADA9C700DAD677 /* BLDictionaries.m in Sources */ = {isa = PBXBuildFile; fileRef = 17677FD01CADA9C700DAD677 /* BLDictionaries.m */; };
+		17677FD51CADAB4100DAD677 /* BLNumbers.h in Headers */ = {isa = PBXBuildFile; fileRef = 17677FD31CADAB4100DAD677 /* BLNumbers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17677FD61CADAB4100DAD677 /* BLNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 17677FD41CADAB4100DAD677 /* BLNumbers.m */; };
+		17677FD91CADABE200DAD677 /* BLLogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 17677FD71CADABE200DAD677 /* BLLogs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17677FDA1CADABE200DAD677 /* BLLogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 17677FD81CADABE200DAD677 /* BLLogs.m */; };
+		17677FDD1CADACA800DAD677 /* BLAlertMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 17677FDB1CADACA800DAD677 /* BLAlertMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17677FDE1CADACA800DAD677 /* BLAlertMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 17677FDC1CADACA800DAD677 /* BLAlertMaker.m */; };
+		17677FE11CADAE6E00DAD677 /* BLDates.h in Headers */ = {isa = PBXBuildFile; fileRef = 17677FDF1CADAE6E00DAD677 /* BLDates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17677FE21CADAE6E00DAD677 /* BLDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 17677FE01CADAE6E00DAD677 /* BLDates.m */; };
 		17874D2B1CAC6B2F00B98FDB /* BLUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 17874D2A1CAC6B2F00B98FDB /* BLUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17874D321CAC6B2F00B98FDB /* BLUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17874D271CAC6B2F00B98FDB /* BLUtilities.framework */; };
 		17874D371CAC6B2F00B98FDB /* BLUtilitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17874D361CAC6B2F00B98FDB /* BLUtilitiesTests.m */; };
-		17874D821CAC6CBE00B98FDB /* Hello.h in Headers */ = {isa = PBXBuildFile; fileRef = 17874D801CAC6CBE00B98FDB /* Hello.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		17874D831CAC6CBE00B98FDB /* Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 17874D811CAC6CBE00B98FDB /* Hello.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +35,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17677FCB1CADA82800DAD677 /* BLViews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLViews.h; sourceTree = "<group>"; };
+		17677FCC1CADA82800DAD677 /* BLViews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLViews.m; sourceTree = "<group>"; };
+		17677FCF1CADA9C700DAD677 /* BLDictionaries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDictionaries.h; sourceTree = "<group>"; };
+		17677FD01CADA9C700DAD677 /* BLDictionaries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDictionaries.m; sourceTree = "<group>"; };
+		17677FD31CADAB4100DAD677 /* BLNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLNumbers.h; sourceTree = "<group>"; };
+		17677FD41CADAB4100DAD677 /* BLNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLNumbers.m; sourceTree = "<group>"; };
+		17677FD71CADABE200DAD677 /* BLLogs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLogs.h; sourceTree = "<group>"; };
+		17677FD81CADABE200DAD677 /* BLLogs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLogs.m; sourceTree = "<group>"; };
+		17677FDB1CADACA800DAD677 /* BLAlertMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLAlertMaker.h; sourceTree = "<group>"; };
+		17677FDC1CADACA800DAD677 /* BLAlertMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLAlertMaker.m; sourceTree = "<group>"; };
+		17677FDF1CADAE6E00DAD677 /* BLDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLDates.h; sourceTree = "<group>"; };
+		17677FE01CADAE6E00DAD677 /* BLDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLDates.m; sourceTree = "<group>"; };
 		17874D271CAC6B2F00B98FDB /* BLUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17874D2A1CAC6B2F00B98FDB /* BLUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLUtilities.h; sourceTree = "<group>"; };
 		17874D2C1CAC6B2F00B98FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17874D311CAC6B2F00B98FDB /* BLUtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLUtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17874D361CAC6B2F00B98FDB /* BLUtilitiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLUtilitiesTests.m; sourceTree = "<group>"; };
 		17874D381CAC6B2F00B98FDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17874D801CAC6CBE00B98FDB /* Hello.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hello.h; sourceTree = "<group>"; };
-		17874D811CAC6CBE00B98FDB /* Hello.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hello.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +97,18 @@
 			children = (
 				17874D2A1CAC6B2F00B98FDB /* BLUtilities.h */,
 				17874D2C1CAC6B2F00B98FDB /* Info.plist */,
-				17874D801CAC6CBE00B98FDB /* Hello.h */,
-				17874D811CAC6CBE00B98FDB /* Hello.m */,
+				17677FCB1CADA82800DAD677 /* BLViews.h */,
+				17677FCC1CADA82800DAD677 /* BLViews.m */,
+				17677FCF1CADA9C700DAD677 /* BLDictionaries.h */,
+				17677FD01CADA9C700DAD677 /* BLDictionaries.m */,
+				17677FD31CADAB4100DAD677 /* BLNumbers.h */,
+				17677FD41CADAB4100DAD677 /* BLNumbers.m */,
+				17677FD71CADABE200DAD677 /* BLLogs.h */,
+				17677FD81CADABE200DAD677 /* BLLogs.m */,
+				17677FDB1CADACA800DAD677 /* BLAlertMaker.h */,
+				17677FDC1CADACA800DAD677 /* BLAlertMaker.m */,
+				17677FDF1CADAE6E00DAD677 /* BLDates.h */,
+				17677FE01CADAE6E00DAD677 /* BLDates.m */,
 			);
 			path = BLUtilities;
 			sourceTree = "<group>";
@@ -100,7 +130,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				17874D2B1CAC6B2F00B98FDB /* BLUtilities.h in Headers */,
-				17874D821CAC6CBE00B98FDB /* Hello.h in Headers */,
+				17677FD11CADA9C700DAD677 /* BLDictionaries.h in Headers */,
+				17677FCD1CADA82800DAD677 /* BLViews.h in Headers */,
+				17677FDD1CADACA800DAD677 /* BLAlertMaker.h in Headers */,
+				17677FD51CADAB4100DAD677 /* BLNumbers.h in Headers */,
+				17677FE11CADAE6E00DAD677 /* BLDates.h in Headers */,
+				17677FD91CADABE200DAD677 /* BLLogs.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17874D831CAC6CBE00B98FDB /* Hello.m in Sources */,
+				17677FDE1CADACA800DAD677 /* BLAlertMaker.m in Sources */,
+				17677FE21CADAE6E00DAD677 /* BLDates.m in Sources */,
+				17677FCE1CADA82800DAD677 /* BLViews.m in Sources */,
+				17677FD21CADA9C700DAD677 /* BLDictionaries.m in Sources */,
+				17677FDA1CADABE200DAD677 /* BLLogs.m in Sources */,
+				17677FD61CADAB4100DAD677 /* BLNumbers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +424,7 @@
 				17874D3D1CAC6B2F00B98FDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17874D3E1CAC6B2F00B98FDB /* Build configuration list for PBXNativeTarget "BLUtilitiesTests" */ = {
 			isa = XCConfigurationList;
@@ -392,6 +433,7 @@
 				17874D401CAC6B2F00B98FDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

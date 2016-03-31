@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BLUtilities"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "BLUtilities"
 
   # This description is used to generate tags and improve search results.
@@ -59,7 +59,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "8.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/blackleg/blutilities.git", :tag => '0.0.1' }
+  s.source       = { :git => "https://github.com/blackleg/blutilities.git", :tag => '0.0.2' }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -1,5 +1,5 @@
 //
-//  BLUtilities.h
+//  BLNumbers.m
 //  BLUtilities
 //
 //  Copyright © 2016 blackleg.es.
@@ -22,21 +22,34 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE
 
-#import <UIKit/UIKit.h>
+#import "BLNumbers.h"
 
-//! Project version number for BLUtilities.
-FOUNDATION_EXPORT double BLUtilitiesVersionNumber;
+@implementation BLNumbers
++(NSNumber *) fromNSStringCurrencyStyle:(NSString *) string {
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    f.numberStyle = NSNumberFormatterCurrencyStyle;
+    return [f numberFromString:string];
+}
 
-//! Project version string for BLUtilities.
-FOUNDATION_EXPORT const unsigned char BLUtilitiesVersionString[];
++(NSNumber *) fromNSStringDecimalStyle:(NSString *) string {
+    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    f.numberStyle = NSNumberFormatterDecimalStyle;
+    return [f numberFromString:string];
+}
 
-// In this header, you should import all the public headers of your framework using statements like #import <BLUtilities/PublicHeader.h>
++(NSString *) doubleNSStringFromNSNumber:(NSNumber *) number {
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    [formatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    [formatter setMaximumFractionDigits:2];
+    [formatter setRoundingMode: NSNumberFormatterRoundUp];
+    return [formatter stringFromNumber:number];
+}
 
-#import <BLUtilities/BLViews.h>
-#import <BLUtilities/BLDictionaries.h>
-#import <BLUtilities/BLNumbers.h>
-#import <BLUtilities/BLLogs.h>
-#import <BLUtilities/BLAlertMaker.h>
-#import <BLUtilities/BLDates.h>
++(int) intFromDouble:(double) num {
+    return [[NSNumber numberWithDouble:num] intValue];
+}
 
-
++(NSString *) doubleNSStringFromDouble:(double)number {
+    return [[NSNumber numberWithDouble:number] stringValue];
+}
+@end

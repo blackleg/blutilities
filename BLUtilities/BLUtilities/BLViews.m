@@ -1,5 +1,5 @@
 //
-//  BLUtilities.h
+//  BLViews.m
 //  BLUtilities
 //
 //  Copyright © 2016 blackleg.es.
@@ -22,21 +22,24 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE
 
-#import <UIKit/UIKit.h>
+#import "BLViews.h"
 
-//! Project version number for BLUtilities.
-FOUNDATION_EXPORT double BLUtilitiesVersionNumber;
+@implementation BLViews
 
-//! Project version string for BLUtilities.
-FOUNDATION_EXPORT const unsigned char BLUtilitiesVersionString[];
++ (CGFloat)getHeight:(UIView *) view {
+    return view.frame.size.height;
+}
 
-// In this header, you should import all the public headers of your framework using statements like #import <BLUtilities/PublicHeader.h>
++ (CGFloat)getWidth:(UIView *) view {
+    return view.frame.size.width;
+}
 
-#import <BLUtilities/BLViews.h>
-#import <BLUtilities/BLDictionaries.h>
-#import <BLUtilities/BLNumbers.h>
-#import <BLUtilities/BLLogs.h>
-#import <BLUtilities/BLAlertMaker.h>
-#import <BLUtilities/BLDates.h>
++(void)addDecorationBotomBorder:(UIView *) view withColor:(UIColor *) color {
+    CALayer *layer = [CALayer new];
+    layer.frame = CGRectMake(0, view.frame.size.height - 1, view.frame.size.width, 1);
+    layer.backgroundColor = [color CGColor];
+    [view.layer addSublayer:layer];
+}
 
 
+@end

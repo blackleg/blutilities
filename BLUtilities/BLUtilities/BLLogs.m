@@ -1,5 +1,5 @@
 //
-//  BLUtilities.h
+//  BLLogs.m
 //  BLUtilities
 //
 //  Copyright © 2016 blackleg.es.
@@ -22,21 +22,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE
 
-#import <UIKit/UIKit.h>
+#import "BLLogs.h"
 
-//! Project version number for BLUtilities.
-FOUNDATION_EXPORT double BLUtilitiesVersionNumber;
-
-//! Project version string for BLUtilities.
-FOUNDATION_EXPORT const unsigned char BLUtilitiesVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <BLUtilities/PublicHeader.h>
-
-#import <BLUtilities/BLViews.h>
-#import <BLUtilities/BLDictionaries.h>
-#import <BLUtilities/BLNumbers.h>
-#import <BLUtilities/BLLogs.h>
-#import <BLUtilities/BLAlertMaker.h>
-#import <BLUtilities/BLDates.h>
-
-
+@implementation BLLogs
++(NSString *)frame:(UIView *) view {
+    return [NSString stringWithFormat:@"View Frame X:%f, Y:%f, Height:%f Width:%f", view.frame.origin.x, view.frame.origin.y, view.frame.size.height, view.frame.size.width];
+}
+@end

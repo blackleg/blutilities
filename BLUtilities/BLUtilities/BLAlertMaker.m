@@ -1,5 +1,5 @@
 //
-//  BLUtilities.h
+//  BLAlertMaker.m
 //  BLUtilities
 //
 //  Copyright © 2016 blackleg.es.
@@ -22,21 +22,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE
 
-#import <UIKit/UIKit.h>
+#import "BLAlertMaker.h"
 
-//! Project version number for BLUtilities.
-FOUNDATION_EXPORT double BLUtilitiesVersionNumber;
-
-//! Project version string for BLUtilities.
-FOUNDATION_EXPORT const unsigned char BLUtilitiesVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <BLUtilities/PublicHeader.h>
-
-#import <BLUtilities/BLViews.h>
-#import <BLUtilities/BLDictionaries.h>
-#import <BLUtilities/BLNumbers.h>
-#import <BLUtilities/BLLogs.h>
-#import <BLUtilities/BLAlertMaker.h>
-#import <BLUtilities/BLDates.h>
-
-
+@implementation BLAlertMaker
++(void)show:(NSString *) button withTitle:(NSString *) title andMessage:(NSString *) message inViewController:(UIViewController *) controller {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:button style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
+    [alert addAction:defaultAction];
+    [controller presentViewController:alert animated:YES completion:nil];
+}
+@end

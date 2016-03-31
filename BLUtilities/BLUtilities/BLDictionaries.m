@@ -1,5 +1,5 @@
 //
-//  BLUtilities.h
+//  BLDictionaries.m
 //  BLUtilities
 //
 //  Copyright © 2016 blackleg.es.
@@ -22,21 +22,21 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE
 
-#import <UIKit/UIKit.h>
+#import "BLDictionaries.h"
+#import <objc/runtime.h>
 
-//! Project version number for BLUtilities.
-FOUNDATION_EXPORT double BLUtilitiesVersionNumber;
-
-//! Project version string for BLUtilities.
-FOUNDATION_EXPORT const unsigned char BLUtilitiesVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <BLUtilities/PublicHeader.h>
-
-#import <BLUtilities/BLViews.h>
-#import <BLUtilities/BLDictionaries.h>
-#import <BLUtilities/BLNumbers.h>
-#import <BLUtilities/BLLogs.h>
-#import <BLUtilities/BLAlertMaker.h>
-#import <BLUtilities/BLDates.h>
-
-
+@implementation BLDictionaries
++(NSDictionary *) dictionaryWithPropertiesOfObject:(id)obj {
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    unsigned count;
+    objc_property_t *properties = class_copyPropertyList([obj class], &count);
+    for (int i = 0; i < count; i++) {
+        NSString *key = [NSString stringWithUTF8String:property_getName(properties[i])];
+        [dict setObject:[obj valueForKey:key] forKey:key];
+    }
+    
+    free(properties);
+    
+    return [NSDictionary dictionaryWithDictionary:dict];
+}
+@end
