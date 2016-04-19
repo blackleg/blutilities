@@ -49,4 +49,8 @@
 +(NSDate *) makeDateFromDoubleInterval:(double) interval;
 +(NSDate *) makeDateFromMilisecondsInterval:(double) interval;
 +(NSNumber *) dateToMiliseconds:(NSDate *) date;
++(Boolean)isDate:(NSDate *) date laterThanOrEqualTo:(NSDate*) anotherDate;
++(Boolean)isDate:(NSDate *) date earlierThanOrEqualTo:(NSDate*) anotherDate;
++(Boolean)isDate:(NSDate *) date laterThan:(NSDate*) anotherDate;
++(Boolean)isDate:(NSDate *) date earlierThan:(NSDate*) anotherDate;
 @end

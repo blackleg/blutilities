@@ -151,4 +151,20 @@
     return [NSNumber numberWithDouble:miliseconds];
 }
 
++(Boolean)isDate:(NSDate *) date laterThanOrEqualTo:(NSDate*)anotherDate {
+    return !([date compare:anotherDate] == NSOrderedAscending);
+}
+
++(Boolean)isDate:(NSDate *) date earlierThanOrEqualTo:(NSDate*)anotherDate {
+    return !([date compare:anotherDate] == NSOrderedDescending);
+}
+
++(Boolean)isDate:(NSDate *) date laterThan:(NSDate*)anotherDate {
+    return ([date compare:anotherDate] == NSOrderedDescending);
+}
+
++(Boolean)isDate:(NSDate *) date earlierThan:(NSDate*)anotherDate {
+    return ([date compare:anotherDate] == NSOrderedAscending);
+}
+
 @end
