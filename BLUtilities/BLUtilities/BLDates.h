@@ -27,11 +27,24 @@
 @interface BLDates : NSObject
 +(NSDateFormatter *)formatter;
 +(NSDateFormatter *)formatterWithDateStyle:(NSDateFormatterStyle) dateStyle andTimeStyle:(NSDateFormatterStyle) timeStyle;
++(NSDateFormatter *)formatterWith:(NSString *) format;
+
+
 +(NSString *)stringFromDateShortStyle:(NSDate *) date;
++(NSString *)makeDateIntervalStringfrom:(NSDate *)fromDate to:(NSDate *) untilDate withIntervalFormat:(NSString *) intervalFormat andDateStyle:(NSDateFormatterStyle) dateStyle andTimeStyle:(NSDateFormatterStyle) timeStyle;
++(NSString *)makeDateIntervalStringfrom:(NSDate *)fromDate to:(NSDate *) untilDate withFormat:(NSString *) format;
+
 +(NSDateComponents *)getTimeComponents:(NSDate *)date;
++(NSDateComponents *)getDateComponents:(NSDate *)date;
++(NSDateComponents *)getComponents:(NSCalendarUnit) components fromDate:(NSDate *) fromDate toDate:(NSDate *) untilDate;
++(NSDateComponents *)getHourComponentsFromDate:(NSDate *) fromDate toDate:(NSDate *) untilDate;
+
 +(NSInteger)getSeconds:(NSDate *) date;
 +(NSInteger)getMinutes:(NSDate *) date;
 +(NSInteger)getHours:(NSDate *) date;
++(NSUInteger)hoursBetween:(NSDate *)firstDate and:(NSDate *)secondDate;
+
+
 +(NSDate *)roundDateTo5Minutes:(NSDate *) date;
 +(NSDate *)roundDateTo10Minutes:(NSDate *) date;
 +(NSDate *)roundDateTo30Minutes:(NSDate *) date;
@@ -44,13 +57,15 @@
 +(NSDate *)roundDateToFlooring10Minutes:(NSDate *) date;
 +(NSDate *)roundDateToFlooring30Minutes:(NSDate *) date;
 +(NSDate *)roundDateToFlooringMinutes:(int)minuteInterval theDate:(NSDate *) date;
-+(NSString *)makeDateIntervalStringfrom:(NSDate *)fromDate to:(NSDate *) untilDate withIntervalFormat:(NSString *) intervalFormat andDateStyle:(NSDateFormatterStyle) dateStyle andTimeStyle:(NSDateFormatterStyle) timeStyle;
-+(NSString *)makeDateIntervalStringfrom:(NSDate *)fromDate to:(NSDate *) untilDate withFormat:(NSString *) format;
 +(NSDate *) makeDateFromDoubleInterval:(double) interval;
 +(NSDate *) makeDateFromMilisecondsInterval:(double) interval;
++(NSDate *) fromString:(NSString *) dateString withFormat:(NSString *) formatString;
+
 +(NSNumber *) dateToMiliseconds:(NSDate *) date;
+
 +(Boolean)isDate:(NSDate *) date laterThanOrEqualTo:(NSDate*) anotherDate;
 +(Boolean)isDate:(NSDate *) date earlierThanOrEqualTo:(NSDate*) anotherDate;
 +(Boolean)isDate:(NSDate *) date laterThan:(NSDate*) anotherDate;
 +(Boolean)isDate:(NSDate *) date earlierThan:(NSDate*) anotherDate;
+
 @end

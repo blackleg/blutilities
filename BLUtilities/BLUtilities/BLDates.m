@@ -36,6 +36,12 @@
     return [NSDateFormatter new];
 }
 
++(NSDateFormatter *)formatterWith:(NSString *) format {
+    NSDateFormatter *formatter = [self formatter];
+    [formatter setDateFormat:format];
+    return formatter;
+}
+
 +(NSDateFormatter *)formatterWithDateStyle:(NSDateFormatterStyle) dateStyle andTimeStyle:(NSDateFormatterStyle) timeStyle {
     NSDateFormatter *dateFormatter = [self formatter];
     [dateFormatter setDateStyle:dateStyle];
@@ -53,6 +59,10 @@
 
 + (NSDateComponents *)getTimeComponents:(NSDate *)date {
     return [[NSCalendar currentCalendar] components:(NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond) fromDate:date];
+}
+
++ (NSDateComponents *)getDateComponents:(NSDate *)date {
+    return [[NSCalendar currentCalendar] components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:date];
 }
 
 + (NSInteger)getSeconds:(NSDate *) date {
@@ -145,6 +155,11 @@
     return [self makeDateFromDoubleInterval:interval/1000.0];
 }
 
++(NSDate *) fromString:(NSString *) dateString withFormat:(NSString *) formatString {
+    NSDateFormatter *formatter = [self formatterWith:formatString];
+    return [formatter dateFromString:dateString];
+}
+
 +(NSNumber *) dateToMiliseconds:(NSDate *) date {
     double seconds = [date timeIntervalSince1970];
     double miliseconds = seconds * 1000;
@@ -166,5 +181,21 @@
 +(Boolean)isDate:(NSDate *) date earlierThan:(NSDate*)anotherDate {
     return ([date compare:anotherDate] == NSOrderedAscending);
 }
+
++(NSDateComponents *)getComponents:(NSCalendarUnit) components fromDate:(NSDate *) fromDate toDate:(NSDate *) untilDate {
+    return [[NSCalendar currentCalendar] components:components fromDate:fromDate toDate:untilDate options:0];
+}
+
++(NSDateComponents *)getHourComponentsFromDate:(NSDate *) fromDate toDate:(NSDate *) untilDate {
+    return [self getComponents:NSCalendarUnitHour fromDate:fromDate toDate:untilDate];
+}
+
++(NSUInteger)hoursBetween:(NSDate *)firstDate and:(NSDate *)secondDate {
+    return [[self getHourComponentsFromDate:firstDate toDate:secondDate] hour];
+}
+
+
+
+
 
 @end
