@@ -1,4 +1,5 @@
 language: objective-c
 osx_image: xcode7.3
-xcode_workspace: BLUtilities.xcworkspace 
-xcode_scheme: BLUtilities
+xcode_sdk: iphoneos9.1
+script:
+- xctool -project BLUtilities.xcworkspace -scheme BLUtilities -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
