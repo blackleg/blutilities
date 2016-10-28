@@ -1,0 +1,16 @@
+PODS:
+  - BLUtilities (1.0.0)
+
+DEPENDENCIES:
+  - BLUtilities (from `../`)
+
+EXTERNAL SOURCES:
+  BLUtilities:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BLUtilities: f28f3fe80549bf41500c89a6b941db4b051b0b29
+
+PODFILE CHECKSUM: 4152ca61d35eb68da81be51f887d0192d017c41c
+
+COCOAPODS: 1.1.1

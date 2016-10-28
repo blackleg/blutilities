@@ -1,0 +1,6 @@
+use_frameworks!
+target 'BLUtilities_Tests' do
+  pod 'BLUtilities', :path => '../'
+  
+  
+end

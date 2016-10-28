@@ -1,0 +1,6 @@
+framework module BLUtilities {
+  umbrella header "BLUtilities-umbrella.h"
+
+  export *
+  module * { export * }
+}

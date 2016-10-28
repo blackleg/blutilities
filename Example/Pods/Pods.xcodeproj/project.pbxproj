@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01DE237ACD1EA61F262A81359FCFAA0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		055E02ACD1DB381E2F1E069B80C8F2C5 /* BLDates.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA0C4E6FA4770E2748711160D6CF3C4 /* BLDates.m */; };
+		0D8A61C8E3B213C6844ACEFE7A6BEFD2 /* BLLogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 26154FD28604E779E090F0517FB910EA /* BLLogs.m */; };
+		0F485709FED4D63EF4C32196E880ABB9 /* BLUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E70F2BD143DF28606FC33E88BBABD82 /* BLUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		234DDC18EB9C776AC924393BFF5C7AC2 /* BLAlertMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 426A79F75233722C21FFD641653EF532 /* BLAlertMaker.m */; };
+		239F1E476096CDAFD01D4526694E66D5 /* BLViews.h in Headers */ = {isa = PBXBuildFile; fileRef = 02584C2A15E2B8E837FF625BAA5E2850 /* BLViews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		247C8BA880F03ABD1429CAE5E019BCC4 /* BLAlertMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 427B3BA7E5A617E3BE6571A2BF054A7E /* BLAlertMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EC17AE331D0B6382CA2D78EA68B7E64 /* Pods-BLUtilities_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48601EDCEF2A76C58AE56B8E2949238D /* Pods-BLUtilities_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ADC3AC2D34F041DE0E687F8B7172867 /* BLViews.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A08DD32524961245F1D10FD15F0EB6 /* BLViews.m */; };
+		8D774539B2DFB58B153884F364A77149 /* BLDictionaries.m in Sources */ = {isa = PBXBuildFile; fileRef = 836F6EE325395E5176566048A8D3A89B /* BLDictionaries.m */; };
+		90B3D07A7E19BB9D8FAAEDE13A5B7F6F /* BLNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DEB09133CC4FDA299876E257B65A702 /* BLNumbers.m */; };
+		ABAF0C7B81CB1F71DA01B405A7022812 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		B60D64B54F30A5C199D79C55EA78F307 /* BLDictionaries.h in Headers */ = {isa = PBXBuildFile; fileRef = FFDB2F49C0A882D30CA64CC595B9CA08 /* BLDictionaries.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C17174780991DDB546676A550F42D7BC /* BLDates.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB452D444F105B742B66889F2510192 /* BLDates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1CE10EC35241F4DA43B09EBF092F712 /* BLLogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 56DA5D3F76DA75961A38AB08A24E2932 /* BLLogs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C227C29590BF8923486F76A235819751 /* BLUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04528920959C0105AF2825CDF4BCF70C /* BLUtilities-dummy.m */; };
+		DE88ED595511357AA306DD6A2A6409A2 /* Pods-BLUtilities_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3269A66C1DA22DE5FB87F79DC3740 /* Pods-BLUtilities_Tests-dummy.m */; };
+		E8A1CB103E6E552537DB233052F896E4 /* BLNumbers.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B8B99CFB2E4F0632696AA7F254F167 /* BLNumbers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F74E77D910F8D75803E335A44DB8A2DF /* BLUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E408CDDD7CFC3018C89C5AC8CC4C8A /* BLUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E9524A01399B396B50B1C3113C09A5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0A6E49BAF469620F01AFD4ADCC139D4;
+			remoteInfo = BLUtilities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021F1501AA94C91B25396B276883B910 /* BLUtilities.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLUtilities.xcconfig; sourceTree = "<group>"; };
+		02584C2A15E2B8E837FF625BAA5E2850 /* BLViews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLViews.h; sourceTree = "<group>"; };
+		04528920959C0105AF2825CDF4BCF70C /* BLUtilities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLUtilities-dummy.m"; sourceTree = "<group>"; };
+		215D79C574A318135A390A8DAE6E5430 /* Pods-BLUtilities_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLUtilities_Tests-resources.sh"; sourceTree = "<group>"; };
+		26154FD28604E779E090F0517FB910EA /* BLLogs.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLLogs.m; sourceTree = "<group>"; };
+		2D4E4952F8237CFB4783410B1E678473 /* Pods-BLUtilities_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUtilities_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		426A79F75233722C21FFD641653EF532 /* BLAlertMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLAlertMaker.m; sourceTree = "<group>"; };
+		427B3BA7E5A617E3BE6571A2BF054A7E /* BLAlertMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLAlertMaker.h; sourceTree = "<group>"; };
+		48601EDCEF2A76C58AE56B8E2949238D /* Pods-BLUtilities_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLUtilities_Tests-umbrella.h"; sourceTree = "<group>"; };
+		56DA5D3F76DA75961A38AB08A24E2932 /* BLLogs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLLogs.h; sourceTree = "<group>"; };
+		6692376F5654D83E6A03E781005C9076 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DEB09133CC4FDA299876E257B65A702 /* BLNumbers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLNumbers.m; sourceTree = "<group>"; };
+		81B8B99CFB2E4F0632696AA7F254F167 /* BLNumbers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLNumbers.h; sourceTree = "<group>"; };
+		836F6EE325395E5176566048A8D3A89B /* BLDictionaries.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLDictionaries.m; sourceTree = "<group>"; };
+		8563CDEA8DBA42AACE55E5853A138A10 /* Pods-BLUtilities_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLUtilities_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		86251041442C4E04551D8288655846AC /* Pods-BLUtilities_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLUtilities_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86A08DD32524961245F1D10FD15F0EB6 /* BLViews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLViews.m; sourceTree = "<group>"; };
+		8EA92143C82BCA09432FF759A826D35C /* Pods-BLUtilities_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUtilities_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		901E73EA41EE575F072E190C715B8966 /* BLUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BLUtilities.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9515F71FD1598DA70D5B4B63B1F7F23C /* BLUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLUtilities.framework; path = BLUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBB72178C36FC1828A60401E7552189 /* Pods-BLUtilities_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BLUtilities_Tests.modulemap"; sourceTree = "<group>"; };
+		9E70F2BD143DF28606FC33E88BBABD82 /* BLUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLUtilities.h; sourceTree = "<group>"; };
+		B1DC3E186E1597CE79F4AB3C5CA85C2F /* Pods_BLUtilities_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLUtilities_Tests.framework; path = "Pods-BLUtilities_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B818ADC142C50A6FACCDD0744A93596D /* BLUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUtilities-prefix.pch"; sourceTree = "<group>"; };
+		C3B3269A66C1DA22DE5FB87F79DC3740 /* Pods-BLUtilities_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLUtilities_Tests-dummy.m"; sourceTree = "<group>"; };
+		C7E408CDDD7CFC3018C89C5AC8CC4C8A /* BLUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUtilities-umbrella.h"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CBE23E6C3A14D4583DD36337B54F1DBE /* Pods-BLUtilities_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLUtilities_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9E6E72D9593CFFB39FA3B18B7169D77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB452D444F105B742B66889F2510192 /* BLDates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLDates.h; sourceTree = "<group>"; };
+		FEA0C4E6FA4770E2748711160D6CF3C4 /* BLDates.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLDates.m; sourceTree = "<group>"; };
+		FFDB2F49C0A882D30CA64CC595B9CA08 /* BLDictionaries.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLDictionaries.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0015F569651545E154F32830422FA40C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DE237ACD1EA61F262A81359FCFAA0E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49B3638BD988C11AE6F6DBC5C89BD3BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABAF0C7B81CB1F71DA01B405A7022812 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E311F706A40B18DB74499CEE9F93E3C9 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				969378F319A0BD7F27D6F840C8CE1F91 /* Products */,
+				F7C8E290E952611987257018F4DBB61A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F13AAE128DA48E9048F8E7642BC30B7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				427B3BA7E5A617E3BE6571A2BF054A7E /* BLAlertMaker.h */,
+				426A79F75233722C21FFD641653EF532 /* BLAlertMaker.m */,
+				FCB452D444F105B742B66889F2510192 /* BLDates.h */,
+				FEA0C4E6FA4770E2748711160D6CF3C4 /* BLDates.m */,
+				FFDB2F49C0A882D30CA64CC595B9CA08 /* BLDictionaries.h */,
+				836F6EE325395E5176566048A8D3A89B /* BLDictionaries.m */,
+				56DA5D3F76DA75961A38AB08A24E2932 /* BLLogs.h */,
+				26154FD28604E779E090F0517FB910EA /* BLLogs.m */,
+				81B8B99CFB2E4F0632696AA7F254F167 /* BLNumbers.h */,
+				7DEB09133CC4FDA299876E257B65A702 /* BLNumbers.m */,
+				9E70F2BD143DF28606FC33E88BBABD82 /* BLUtilities.h */,
+				02584C2A15E2B8E837FF625BAA5E2850 /* BLViews.h */,
+				86A08DD32524961245F1D10FD15F0EB6 /* BLViews.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		969378F319A0BD7F27D6F840C8CE1F91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9515F71FD1598DA70D5B4B63B1F7F23C /* BLUtilities.framework */,
+				B1DC3E186E1597CE79F4AB3C5CA85C2F /* Pods_BLUtilities_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E349933ADED071C3A2174BB4F6EAC58 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				901E73EA41EE575F072E190C715B8966 /* BLUtilities.modulemap */,
+				021F1501AA94C91B25396B276883B910 /* BLUtilities.xcconfig */,
+				04528920959C0105AF2825CDF4BCF70C /* BLUtilities-dummy.m */,
+				B818ADC142C50A6FACCDD0744A93596D /* BLUtilities-prefix.pch */,
+				C7E408CDDD7CFC3018C89C5AC8CC4C8A /* BLUtilities-umbrella.h */,
+				6692376F5654D83E6A03E781005C9076 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BLUtilities";
+			sourceTree = "<group>";
+		};
+		A5CEFA090D894071D9FE29C5D1E57385 /* BLUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				EB94218C30E055B1B95DC57E507CECB1 /* BLUtilities */,
+				9E349933ADED071C3A2174BB4F6EAC58 /* Support Files */,
+			);
+			name = BLUtilities;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D89D7762642A9A3C976F038F4D6D3C8B /* Pods-BLUtilities_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F9E6E72D9593CFFB39FA3B18B7169D77 /* Info.plist */,
+				9CBB72178C36FC1828A60401E7552189 /* Pods-BLUtilities_Tests.modulemap */,
+				86251041442C4E04551D8288655846AC /* Pods-BLUtilities_Tests-acknowledgements.markdown */,
+				CBE23E6C3A14D4583DD36337B54F1DBE /* Pods-BLUtilities_Tests-acknowledgements.plist */,
+				C3B3269A66C1DA22DE5FB87F79DC3740 /* Pods-BLUtilities_Tests-dummy.m */,
+				8563CDEA8DBA42AACE55E5853A138A10 /* Pods-BLUtilities_Tests-frameworks.sh */,
+				215D79C574A318135A390A8DAE6E5430 /* Pods-BLUtilities_Tests-resources.sh */,
+				48601EDCEF2A76C58AE56B8E2949238D /* Pods-BLUtilities_Tests-umbrella.h */,
+				8EA92143C82BCA09432FF759A826D35C /* Pods-BLUtilities_Tests.debug.xcconfig */,
+				2D4E4952F8237CFB4783410B1E678473 /* Pods-BLUtilities_Tests.release.xcconfig */,
+			);
+			name = "Pods-BLUtilities_Tests";
+			path = "Target Support Files/Pods-BLUtilities_Tests";
+			sourceTree = "<group>";
+		};
+		E311F706A40B18DB74499CEE9F93E3C9 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5CEFA090D894071D9FE29C5D1E57385 /* BLUtilities */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		EB94218C30E055B1B95DC57E507CECB1 /* BLUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F13AAE128DA48E9048F8E7642BC30B7 /* Classes */,
+			);
+			name = BLUtilities;
+			path = BLUtilities;
+			sourceTree = "<group>";
+		};
+		F7C8E290E952611987257018F4DBB61A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D89D7762642A9A3C976F038F4D6D3C8B /* Pods-BLUtilities_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A89022E0EC3074F65D32331541E161A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EC17AE331D0B6382CA2D78EA68B7E64 /* Pods-BLUtilities_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7E2AC3BC7CAA4E8723AE7531E83C3E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				247C8BA880F03ABD1429CAE5E019BCC4 /* BLAlertMaker.h in Headers */,
+				C17174780991DDB546676A550F42D7BC /* BLDates.h in Headers */,
+				B60D64B54F30A5C199D79C55EA78F307 /* BLDictionaries.h in Headers */,
+				C1CE10EC35241F4DA43B09EBF092F712 /* BLLogs.h in Headers */,
+				E8A1CB103E6E552537DB233052F896E4 /* BLNumbers.h in Headers */,
+				F74E77D910F8D75803E335A44DB8A2DF /* BLUtilities-umbrella.h in Headers */,
+				0F485709FED4D63EF4C32196E880ABB9 /* BLUtilities.h in Headers */,
+				239F1E476096CDAFD01D4526694E66D5 /* BLViews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		489E8956B9A854968E37CCED8296656D /* Pods-BLUtilities_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2624755DF33F4DF27606740B934B30EC /* Build configuration list for PBXNativeTarget "Pods-BLUtilities_Tests" */;
+			buildPhases = (
+				96A10356AC1E3D7B11BD2F28743E78CB /* Sources */,
+				49B3638BD988C11AE6F6DBC5C89BD3BD /* Frameworks */,
+				A89022E0EC3074F65D32331541E161A8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C87CC326D061A74DEA688FE1B6A5FFCF /* PBXTargetDependency */,
+			);
+			name = "Pods-BLUtilities_Tests";
+			productName = "Pods-BLUtilities_Tests";
+			productReference = B1DC3E186E1597CE79F4AB3C5CA85C2F /* Pods_BLUtilities_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0A6E49BAF469620F01AFD4ADCC139D4 /* BLUtilities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62295CA3D3B82D5B52828F46F9AE9803 /* Build configuration list for PBXNativeTarget "BLUtilities" */;
+			buildPhases = (
+				C4C2AD49AAE089AF785622483DEC59F7 /* Sources */,
+				0015F569651545E154F32830422FA40C /* Frameworks */,
+				D7E2AC3BC7CAA4E8723AE7531E83C3E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLUtilities;
+			productName = BLUtilities;
+			productReference = 9515F71FD1598DA70D5B4B63B1F7F23C /* BLUtilities.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 969378F319A0BD7F27D6F840C8CE1F91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0A6E49BAF469620F01AFD4ADCC139D4 /* BLUtilities */,
+				489E8956B9A854968E37CCED8296656D /* Pods-BLUtilities_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96A10356AC1E3D7B11BD2F28743E78CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE88ED595511357AA306DD6A2A6409A2 /* Pods-BLUtilities_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C2AD49AAE089AF785622483DEC59F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234DDC18EB9C776AC924393BFF5C7AC2 /* BLAlertMaker.m in Sources */,
+				055E02ACD1DB381E2F1E069B80C8F2C5 /* BLDates.m in Sources */,
+				8D774539B2DFB58B153884F364A77149 /* BLDictionaries.m in Sources */,
+				0D8A61C8E3B213C6844ACEFE7A6BEFD2 /* BLLogs.m in Sources */,
+				90B3D07A7E19BB9D8FAAEDE13A5B7F6F /* BLNumbers.m in Sources */,
+				C227C29590BF8923486F76A235819751 /* BLUtilities-dummy.m in Sources */,
+				8ADC3AC2D34F041DE0E687F8B7172867 /* BLViews.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C87CC326D061A74DEA688FE1B6A5FFCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BLUtilities;
+			target = B0A6E49BAF469620F01AFD4ADCC139D4 /* BLUtilities */;
+			targetProxy = 2E9524A01399B396B50B1C3113C09A5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		166A72063760C168EC47FD211005A2AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D4E4952F8237CFB4783410B1E678473 /* Pods-BLUtilities_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLUtilities_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BLUtilities_Tests/Pods-BLUtilities_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BLUtilities_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B97F1D8EE67485E9D4F0E28626658FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 021F1501AA94C91B25396B276883B910 /* BLUtilities.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BLUtilities/BLUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BLUtilities/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BLUtilities/BLUtilities.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BLUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C4C94FD379AFCE7688A95402B049A06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 021F1501AA94C91B25396B276883B910 /* BLUtilities.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BLUtilities/BLUtilities-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BLUtilities/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BLUtilities/BLUtilities.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BLUtilities;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CFFFCA919FA26011C37CFF778368AE4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA92143C82BCA09432FF759A826D35C /* Pods-BLUtilities_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLUtilities_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BLUtilities_Tests/Pods-BLUtilities_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BLUtilities_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2624755DF33F4DF27606740B934B30EC /* Build configuration list for PBXNativeTarget "Pods-BLUtilities_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFFFCA919FA26011C37CFF778368AE4C /* Debug */,
+				166A72063760C168EC47FD211005A2AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62295CA3D3B82D5B52828F46F9AE9803 /* Build configuration list for PBXNativeTarget "BLUtilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B97F1D8EE67485E9D4F0E28626658FD /* Debug */,
+				8C4C94FD379AFCE7688A95402B049A06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

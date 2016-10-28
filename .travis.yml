@@ -1,5 +1,14 @@
-language: objective-c
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
 osx_image: xcode7.3
-xcode_sdk: iphoneos9.1
+language: objective-c
+# cache: cocoapods
+# podfile: Example/Podfile
+# before_install:
+# - gem install cocoapods # Since Travis is not always on latest version
+# - pod install --project-directory=Example
 script:
-- xctool -project BLUtilities.xcworkspace -scheme BLUtilities -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+- set -o pipefail && xcodebuild test -workspace Example/BLUtilities.xcworkspace -scheme BLUtilities-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+- pod lib lint
