@@ -154,7 +154,7 @@
 				ORGANIZATIONNAME = blackleg;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
-						DevelopmentTeam = 98783C9GK4;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -336,7 +336,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 82D02AB0B3282427C2277D2B /* Pods-BLUtilities_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 98783C9GK4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -359,7 +360,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D546CFBBC74A001FD04FD2E7 /* Pods-BLUtilities_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 98783C9GK4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

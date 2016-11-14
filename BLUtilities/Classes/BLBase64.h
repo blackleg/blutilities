@@ -1,5 +1,5 @@
 //
-//  BLUtilities.h
+//  BLBase64.h
 //  BLUtilities
 //
 //  Copyright © 2016 blackleg.es.
@@ -24,19 +24,6 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for BLUtilities.
-FOUNDATION_EXPORT double BLUtilitiesVersionNumber;
-
-//! Project version string for BLUtilities.
-FOUNDATION_EXPORT const unsigned char BLUtilitiesVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <BLUtilities/PublicHeader.h>
-
-#import <BLUtilities/BLViews.h>
-#import <BLUtilities/BLDictionaries.h>
-#import <BLUtilities/BLNumbers.h>
-#import <BLUtilities/BLLogs.h>
-#import <BLUtilities/BLAlertMaker.h>
-#import <BLUtilities/BLDates.h>
-#import <BLUtilities/BLBase64.h>
-
+@interface BLBase64 : NSObject
++(NSString *)encode:(NSString *) string;
+@end

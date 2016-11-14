@@ -23,6 +23,8 @@
 		C17174780991DDB546676A550F42D7BC /* BLDates.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB452D444F105B742B66889F2510192 /* BLDates.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C1CE10EC35241F4DA43B09EBF092F712 /* BLLogs.h in Headers */ = {isa = PBXBuildFile; fileRef = 56DA5D3F76DA75961A38AB08A24E2932 /* BLLogs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C227C29590BF8923486F76A235819751 /* BLUtilities-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04528920959C0105AF2825CDF4BCF70C /* BLUtilities-dummy.m */; };
+		C4895F3E1DDA04AA0099C654 /* BLBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C4895F3D1DDA04AA0099C654 /* BLBase64.m */; };
+		C4895F401DDA06500099C654 /* BLBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = C4895F3F1DDA04D00099C654 /* BLBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DE88ED595511357AA306DD6A2A6409A2 /* Pods-BLUtilities_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B3269A66C1DA22DE5FB87F79DC3740 /* Pods-BLUtilities_Tests-dummy.m */; };
 		E8A1CB103E6E552537DB233052F896E4 /* BLNumbers.h in Headers */ = {isa = PBXBuildFile; fileRef = 81B8B99CFB2E4F0632696AA7F254F167 /* BLNumbers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F74E77D910F8D75803E335A44DB8A2DF /* BLUtilities-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7E408CDDD7CFC3018C89C5AC8CC4C8A /* BLUtilities-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -57,14 +59,16 @@
 		86251041442C4E04551D8288655846AC /* Pods-BLUtilities_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLUtilities_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		86A08DD32524961245F1D10FD15F0EB6 /* BLViews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BLViews.m; sourceTree = "<group>"; };
 		8EA92143C82BCA09432FF759A826D35C /* Pods-BLUtilities_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUtilities_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		901E73EA41EE575F072E190C715B8966 /* BLUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BLUtilities.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9515F71FD1598DA70D5B4B63B1F7F23C /* BLUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLUtilities.framework; path = BLUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CBB72178C36FC1828A60401E7552189 /* Pods-BLUtilities_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BLUtilities_Tests.modulemap"; sourceTree = "<group>"; };
+		901E73EA41EE575F072E190C715B8966 /* BLUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BLUtilities.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9515F71FD1598DA70D5B4B63B1F7F23C /* BLUtilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBB72178C36FC1828A60401E7552189 /* Pods-BLUtilities_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BLUtilities_Tests.modulemap"; sourceTree = "<group>"; };
 		9E70F2BD143DF28606FC33E88BBABD82 /* BLUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BLUtilities.h; sourceTree = "<group>"; };
-		B1DC3E186E1597CE79F4AB3C5CA85C2F /* Pods_BLUtilities_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLUtilities_Tests.framework; path = "Pods-BLUtilities_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1DC3E186E1597CE79F4AB3C5CA85C2F /* Pods_BLUtilities_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLUtilities_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B818ADC142C50A6FACCDD0744A93596D /* BLUtilities-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUtilities-prefix.pch"; sourceTree = "<group>"; };
 		C3B3269A66C1DA22DE5FB87F79DC3740 /* Pods-BLUtilities_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLUtilities_Tests-dummy.m"; sourceTree = "<group>"; };
+		C4895F3D1DDA04AA0099C654 /* BLBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLBase64.m; sourceTree = "<group>"; };
+		C4895F3F1DDA04D00099C654 /* BLBase64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLBase64.h; sourceTree = "<group>"; };
 		C7E408CDDD7CFC3018C89C5AC8CC4C8A /* BLUtilities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUtilities-umbrella.h"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CBE23E6C3A14D4583DD36337B54F1DBE /* Pods-BLUtilities_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLUtilities_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -129,8 +133,9 @@
 				9E70F2BD143DF28606FC33E88BBABD82 /* BLUtilities.h */,
 				02584C2A15E2B8E837FF625BAA5E2850 /* BLViews.h */,
 				86A08DD32524961245F1D10FD15F0EB6 /* BLViews.m */,
+				C4895F3F1DDA04D00099C654 /* BLBase64.h */,
+				C4895F3D1DDA04AA0099C654 /* BLBase64.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -206,7 +211,6 @@
 			children = (
 				8F13AAE128DA48E9048F8E7642BC30B7 /* Classes */,
 			);
-			name = BLUtilities;
 			path = BLUtilities;
 			sourceTree = "<group>";
 		};
@@ -241,6 +245,7 @@
 				F74E77D910F8D75803E335A44DB8A2DF /* BLUtilities-umbrella.h in Headers */,
 				0F485709FED4D63EF4C32196E880ABB9 /* BLUtilities.h in Headers */,
 				239F1E476096CDAFD01D4526694E66D5 /* BLViews.h in Headers */,
+				C4895F401DDA06500099C654 /* BLBase64.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4895F3E1DDA04AA0099C654 /* BLBase64.m in Sources */,
 				234DDC18EB9C776AC924393BFF5C7AC2 /* BLAlertMaker.m in Sources */,
 				055E02ACD1DB381E2F1E069B80C8F2C5 /* BLDates.m in Sources */,
 				8D774539B2DFB58B153884F364A77149 /* BLDictionaries.m in Sources */,
