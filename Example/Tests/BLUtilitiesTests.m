@@ -29,9 +29,18 @@
     NSString *string = @"manuela:1234";
     NSString *encodedString = [BLBase64 encode: string];
     XCTAssertNotNil(encodedString);
-    NSLog(@"Encoded: %@", encodedString);
     NSString *expected = @"bWFudWVsYToxMjM0";
     XCTAssertTrue([expected isEqualToString:encodedString]);
+}
+
+
+- (void)testBasicAuthString {
+    NSString *user = @"manuela";
+    NSString *password = @"1234";
+    NSString *string = [BLBase64 basicAuthStringWithUser:(NSString *) user andPassword:(NSString *) password];
+    XCTAssertNotNil(string);
+    NSString *expected = @"Basic bWFudWVsYToxMjM0";
+    XCTAssertTrue([expected isEqualToString:string]);
 }
 
 

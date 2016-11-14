@@ -35,4 +35,10 @@
     }
 }
 
+
++(NSString *)basicAuthStringWithUser:(NSString *) user andPassword:(NSString *) password {
+    NSString *authString = [NSString stringWithFormat:@"%@:%@", user, password];
+    return [NSString stringWithFormat:@"Basic %@", [self encode:authString]];
+}
+
 @end

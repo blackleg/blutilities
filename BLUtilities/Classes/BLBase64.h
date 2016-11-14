@@ -26,4 +26,5 @@
 
 @interface BLBase64 : NSObject
 +(NSString *)encode:(NSString *) string;
++(NSString *)basicAuthStringWithUser:(NSString *) user andPassword:(NSString *) password;
 @end
